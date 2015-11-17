@@ -9,7 +9,7 @@ num = rand(MAX)
 
 puts "Try to find the number between 0 and #{MAX}!"
 
-print "Guess: "
+print 'Guess: '
 while line = gets do 
     try = line.to_i
     case try 
@@ -19,6 +19,6 @@ while line = gets do
             puts 'You won!!!' 
             break
     end
-    print "Try again: "
+    print 'Try again: '
 end
 
