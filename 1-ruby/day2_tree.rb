@@ -1,11 +1,11 @@
-#---
-# Excerpted from "Seven Languages in Seven Weeks",
-# published by The Pragmatic Bookshelf.
-# Copyrights apply to this code. It may not be used to create training material, 
-# courses, books, articles, and the like. Contact us if you are in doubt.
-# We make no guarantees that this code is fit for any purpose. 
-# Visit http://www.pragmaticprogrammer.com/titles/btlang for more book information.
-#---
+#!/usr/bin/ruby
+
+# The Tree class was interesting, but it did not allow you to specify a new
+# tree with a clean user interface. Let the initializer accept a nested
+# structure of hashes. You should be able to specifiy a tree like this:
+# {'grandpa' => {'dad' => {'child1' => {}, 'child 2' => {}}, 'uncle' => {
+# 	'child 3' => {}, 'child 4' => {}}}}
+
 class Tree
   attr_accessor :children, :node_name
   
